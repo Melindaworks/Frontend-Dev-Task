@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      background-color: black;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url("background-image.png") no-repeat center center/cover;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .search {
+      display: flex;
+      margin: 1em 0;
+    }
+
+    .search input {
+      padding: 0.5em;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      height: 40px;
+      width: 200px;
+    }
+
+    .search button {
+      padding: 0.5em;
+      border: none;
+      background-color: hsl(122, 39%, 49%);
+      color: white;
+      border-radius: 0 5px 5px 0;
+      height: 40px;
+    }
+
+    .content {
+      padding: 2em;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="logo">MELWORK</div>
+      <nav>
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="index.html" class="button">SIGN IN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome.</h1>
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
